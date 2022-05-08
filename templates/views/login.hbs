@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo Login</title>
+</head>
+<body>
+
+     <form class="form" method="post" action="/login">
+     
+        <h1>todos</h1>
+      
+        <div class="login"><h4>Sign In</h4></div>
+        
+        <div class="form-row">
+            <label for="email" class="form-label" id="email">Email</label>
+            <input name="email" autocomplete="off" type="email" class="form-input" placeholder="email" id="email">
+        </div>
+        <div class="form-row">
+            <label for="password" class="form-label" id="password">Password</label>
+            <input  name="password" autocomplete="off" type="password" class="form-input" placeholder="password" id="password">
+        </div>
+
+        <div class="btn-holder">
+            <button type="submit" class="btn btn-block">
+                Login
+            </button>
+        </div>
+
+            <p class="new-user">No account? 
+                <a href="signup" class="sign-up">Sign Up!</a>
+            </p>
+
+
+    </form>
+
+
+    
+</body>
+</html>

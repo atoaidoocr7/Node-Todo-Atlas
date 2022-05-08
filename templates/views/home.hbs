@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="css/normalize.css"> --}}
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Todo Home</title>
+</head>
+<body>
+    <h3 class="welcome">Hi, {{user}}, welcome to your todo list!</h3>
+    
+    <form method="post" action="/logout" class="logout">
+        <button class="btn" type="submit">Sign Out</button>
+    </form>
+    
+    <h1>Todos</h1>
+
+    <form id="form" class="form" method="post" action="/createTodos">
+        <input type="text" name="todo" autocomplete="off" placeholder="Enter your todo" class="input" id="input">
+
+        <ul class="todos" id="todos">
+
+        </ul>
+        
+    </form>
+
+    <small>Left click to toggle completed.<br> 
+    Right click to delete todo</small>
+    <script src="js/fetchTodos.js"></script>
+</body>
+</html>
